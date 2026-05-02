@@ -15,7 +15,7 @@ class WeProvide(models.Model):
 class Facility(models.Model):
     name = models.CharField(max_length=100)
     image = models.ImageField(upload_to='facility_images/', storage=MediaCloudinaryStorage())
-    # description = models.TextField()
+    description = models.TextField()
 
     def __str__(self):
         return self.name
